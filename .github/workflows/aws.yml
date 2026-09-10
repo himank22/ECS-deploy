@@ -6,11 +6,11 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: my-apache-website
-  ECS_SERVICE: practical-app-lp6n32-service-gq3lo0tc
-  ECS_CLUSTER: calculating-eagle-2zfzot
-  ECS_TASK_DEFINITION: task-definition.json
-  CONTAINER_NAME: apache-website
+  ECR_REPOSITORY: himankrepo1
+  ECS_SERVICE: himankTD-service-3q98fb0z
+  ECS_CLUSTER: himankCL
+  ECS_TASK_DEFINITION: himankTD
+  CONTAINER_NAME: Main
 
 permissions:
   contents: read
