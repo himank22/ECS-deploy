@@ -7,9 +7,9 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: himankrepo1
-  ECS_SERVICE: himankTD-service-3q98fb0z
+  ECS_SERVICE: himankTG1-service-w2c3s76r
   ECS_CLUSTER: himankCL
-  ECS_TASK_DEFINITION: himankTD
+  ECS_TASK_DEFINITION: himankTG1
   CONTAINER_NAME: apache12
 
 permissions:
