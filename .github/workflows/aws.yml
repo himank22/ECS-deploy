@@ -9,7 +9,7 @@ env:
   ECR_REPOSITORY: himankrepo1
   ECS_SERVICE: himankTG1-service-w2c3s76r
   ECS_CLUSTER: himankCL
-  ECS_TASK_DEFINITION: himankTG1:1
+  ECS_TASK_DEFINITION: himankTG1
   CONTAINER_NAME: apache12
 
 permissions:
