@@ -10,7 +10,7 @@ env:
   ECS_SERVICE: himankTD-service-3q98fb0z
   ECS_CLUSTER: himankCL
   ECS_TASK_DEFINITION: himankTD
-  CONTAINER_NAME: Main
+  CONTAINER_NAME: apache12
 
 permissions:
   contents: read
