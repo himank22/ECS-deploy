@@ -9,32 +9,33 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Build Docker Image') {
             steps {
-                echo 'Building application...'
+                sh 'docker build -t my-app:latest .'
             }
         }
 
-        stage('Test') {
+        stage('Stop Old Container') {
             steps {
-                echo 'Running tests...'
+                sh 'docker stop my-app || true'
+                sh 'docker rm my-app || true'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
+                sh 'docker run -d --name my-app -p 80:80 my-app:latest'
             }
         }
     }
 
     post {
         success {
-            echo 'CI/CD Pipeline completed successfully!'
+            echo 'Application deployed successfully!'
         }
 
         failure {
-            echo 'Pipeline failed!'
+            echo 'Deployment failed!'
         }
     }
 }
